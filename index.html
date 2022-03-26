@@ -2,64 +2,120 @@
 <html lang="en">
 
   <head>
-    <title>Mini Project 2</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Project 2</title>
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
 
   <body>
+    
+    
     <header>
-      <h1>CSS Snippet Cheatsheet</h1>
-      <p id="intro">
+      <h1> CSS Snippet Cheatsheet</h1>
+      <p>
         Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and  it will automatically select all of the code for you to copy.
       </p>
     </header>
 
     <main>
       <section class="card">
-        <header>Flexbox Row</header>
-        <p id="box">Use these three properties to create a Flexbox row layout.</p>
-        <img src="./assets/images/img1.png" alt="camera" />
+        <h2 >Flexbox Row </h2>
+        <p>Use these three properties to create a Flexbox row layout.</p>
+        <div>
+          <pre class="code-CSS">
+            .row {
+              display:flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              }
+          </pre>
+        </div> 
+      </section>     
+      
+
+      <section class="card">
+        <h2>Flexbox Column</h2>
+        <p>Use this to create a Flexbox column layout</p>
+          <div>
+            <pre class="code-CSS">
+              .column {
+                display: flex;
+                flex-direction: column
+                } 
+            </pre>
+          </div>
       </section>
 
       <section class="card">
-        <header>Flexbox Column</header>
-        <p id="box">Use this to create a Flexbox column layout</p>
-        <img src="./assets/images/img2.png" alt="tablet" />
-      </section>
+        <h2>CSS Grid Layout</h2>
+        <p>Build a 12-column layout using CSS Grid</p>
+        <div>
+          <pre class="code-CSS">
+            .grid {
+              display: grid;
+              width: 100%;
+              grid-template-columns: repeat(12, 1fr);
+              }
+          </pre>
+        </div>
+      
+        </section>
 
       <section class="card">
-        <header>CSS Grid Layout</header>
-        <p id="box">Build a 12-column layout using CSS Grid</p>
-        <img src="./assets/images/img3.png" alt="toilet paper" />
-      </section>
+        <h2>Linear Gradients</h2>
+        <p>This will create a background linear gradient from top to bottom</p>
+          <div>
+            <pre class="code-CSS">
+              .linear-gradient-background {
+                background-image: linear-gradient(
+                rgba(232, 102, 236, 0.3) 0%,
+                rgba(232, 102, 236, 0.6) 100%);
+                }
+               
+            </pre>
+          </div>
+         
+        </section>
 
       <section class="card">
-        <header>Linear Gradients</header>
-        <p id="box">This will create a background linear gradient from top to bottom</p>
-        <img src="./assets/images/img4.png" alt="wooden spoons" />
-      </section>
+        <h2>Box Transition Glow</h2>
+        <p>Use transition and box shadows to glow on hover.</p>
+        <div>
+          <pre class="code-CSS">
+            .code-card .card-header {
+              border-radius: 8px;
+              transition: all 0.5s ease-in-out;
+              }
+          
+            .code-card:hover,
+            .code-card:hover .card-header {
+              box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+              }
+          </pre>
+        </div> 
+        </section>
 
-      <section class="card">
-        <header>Box Transition Glow</header>
-        <p id="box">Use transition and box shadows to glow on hover.</p>
-        <img src="./assets/images/img5.png" alt="soap" />
-      </section>
-
-      <section class="card">
-        <header>Overplay Card with Title</header>
-        <p id="box">Use this position and negative margins to raise elements higher than their natural starting point.</p>
-        <img src="./assets/images/img6.png" alt="spinning top" />
+          <section class="card">
+        <h2>Overplay Card with Title</h2>
+        <p>Use this position and negative margins to raise elements higher than their natural starting point.</p>
+        <div>
+          <pre class="code-CSS">
+            .card-header {
+              position: relative;
+              margin-top: -20px;
+              } 
+          </pre>
+        </div>
       </section>
     </main>
   </body>
 
   <footer>
-<h2>
-<!--add heart emoji-->
-    Made with ❤️️ and CSS
-</h2>
+    <h3>
+      <!--add heart emoji-->
+      Made with ❤️️ and CSS
+    </h3>
   </footer>
 
 </html>

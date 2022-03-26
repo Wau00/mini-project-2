@@ -1,75 +1,110 @@
+
+/* General Attributes*/
 * {
-    box-sizing: border-box;
+    
     background-color:#333940;
-
-  }
-  
-
-  body {
-    font-family:'Times New Roman', Times, serif;
-    margin: 0;
-  }
-  
-  main {
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    /*reverse the order of elements*/
-    /*flex-wrap: wrap-reverse;*/
-    margin-top: 2%;
-  }
-  
-  h1 {
-   text-align: center;
-    /* Forces elements to the next line if they don't fit */
-    color: #E867ED ;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  #intro {
-    color:#fff ;
-    text-align: center;
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
     
   }
   
-  .card {
-    flex: 1 0 0;/* element shrinks to smallest size possible */
-    padding: 10px;
-    text-align: left;
-    font-size: 20px;
-    border-style: dashed;
-    border-width: 3px;
-    margin: 20px;
-    border-color: #fff;
-    color: #E867ED;
-  }
-  
-  
-  .card header {
-    padding: 20px;
-    background: #333940;
-    color:#E867ED;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 15px;
-    text-align: left;
-    font-size: 150%;
-    font-weight: bold;
 
+  header {
+    width: 96%;
+  margin: auto;
+  padding: 2.5rem;
+  text-align: center;
   }
   
-  .card img {
-    width: 100%;
-    min-width: 400px;
-  }
   
+  body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.5;
+    color: #fff;
+    flex-direction: row;  
+  }
+
+  h1 {
+    text-align: center;
+     color: #E867ED ;
+     font-size: 40px;
+     }
+  
+      main {
+        display:flex;
+        flex-wrap: wrap;
+        width: 96%;
+        margin: 32px auto;
+      }
+
+      h2 {
+        padding: 2px;
+        background:#333940;
+        color:#E867ED;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 15px;
+        text-align: left;
+        font-size: 200%;
+        font-weight: 700;
+        position: relative;
+        margin-top: -50px;
+       }
+
+        pre { 
+            display: flex;
+          flex-direction:row;
+          flex: 1 0 30%;
+          }
+        .code-CSS { font-family: consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+          'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+          'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+          monospace;
+          white-space: pre-line;
+          color:#fff ;
+          border-radius: 16px;
+          background-image: linear-gradient(
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+          );
+          }
+        .card{
+          flex: 1 0 25%;
+          padding: 1.5rem;
+          text-align: left;
+          font-size: 20px;
+          outline: 2px dashed #fff;
+          border-width: 3px;
+          margin: 20px;
+          color:#E867ED;
+          margin-bottom: 1.5rem;
+          transition: flex-basis 5000ms linear;
+          border-spacing: 20px;
+          }
+  
+  
+ 
+  
+  
+/* Footer */
+
+
   footer {
       text-align: center;
       color: #E867ED;
       font-family: 'Times New Roman', Times, serif;
   }
+  @media only screen and (max-width: 798px) {
+    body {
+      flex-direction: column;
+      flex: 1 0 50%;
+      margin: auto;
+      
+    }
   
+  }
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  }
