@@ -6,7 +6,12 @@
     
   }
   
-
+  :root {
+    --piglet: #E867ED ;
+    --snoopy: #fff ;
+  }
+ /* Main Content */
+  
   header {
     width: 96%;
   margin: auto;
@@ -19,13 +24,13 @@
     font-family:'Times New Roman', Times, serif;
     margin: 0;
     line-height: 1.5;
-    color: #fff;
+    color: var(--snoopy);
     flex-direction: row;  
   }
 
   h1 {
     text-align: center;
-     color: #E867ED ;
+     color: var(--piglet) ;
      font-size: 40px;
      }
   
@@ -39,13 +44,13 @@
       h2 {
         padding: 2px;
         background:#333940;
-        color:#E867ED;
-        border-color: #fff;
+        color: var(--piglet) ;
+        border-color: var(--snoopy);
         border-style: solid;
         border-width: 3px;
         border-radius: 15px;
         text-align: left;
-        font-size: 200%;
+        font-size: 150%;
         font-weight: 700;
         position: relative;
         margin-top: -50px;
@@ -61,7 +66,8 @@
           'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
           monospace;
           white-space: pre-line;
-          color:#fff ;
+          color: var(--snoopy);
+          margin-top: 8px;
           border-radius: 16px;
           background-image: linear-gradient(
             rgba(232, 102, 236, 0.3) 0%,
@@ -73,12 +79,11 @@
           padding: 1.5rem;
           text-align: left;
           font-size: 20px;
-          outline: 2px dashed #fff;
+          outline: 2px dashed var(--snoopy);
           border-width: 3px;
           margin: 20px;
-          color:#E867ED;
+          color: var(--piglet) ;
           margin-bottom: 1.5rem;
-          transition: flex-basis 5000ms linear;
           border-spacing: 20px;
           }
   
@@ -91,9 +96,20 @@
 
   footer {
       text-align: center;
-      color: #E867ED;
+      color:var(--snoopy);
       font-family: 'Times New Roman', Times, serif;
-  }
+      font-size: 150%;
+     }
+     h3{
+       color: var(--piglet);
+     }
+
+     a{
+       color: var(--piglet);
+     }
+  
+  /* Media */
+  
   @media only screen and (max-width: 798px) {
     body {
       flex-direction: column;
